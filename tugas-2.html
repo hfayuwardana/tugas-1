@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form</title>
+	<style>
+		span {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<p>Let Ostric Know Who You Are</p>
+	<form method="GET">
+		<table>
+			<table>
+				<tr>
+					<td><label for="nama"><span>*</span>Nama</label></td>
+					<td>
+						<input type="text" name="nama" id="nama" placeholder="Enter Your Name" required>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="email"><span>*</span>Email</label></td>
+					<td>
+						<input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+					</td>
+				</tr>
+				<tr>
+				<tr>
+					<td><label for="age"><span>*</span>Age</label></td>
+					<td>
+						<input type="number" min="0" max="30" name="age" id="age" placeholder="Age" required>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="role">Role</label></td>
+					<td>
+						<select id="role" name="role">
+							<option>Learner</option>
+							<option>Employee</option>
+							<option>Entrepreneur</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="generation">Ostric Generation</label></td>
+					<td>
+						<input type="radio" name="generation" value="2018">
+						<label>2018</label>
+						<br>
+						<input type="radio" name="generation" value="2019">
+						<label>2019</label>
+						<br>
+						<input type="radio" name="generation" value="other">
+						<label>Other</label>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="interest">Interested in what area</label></td>
+					<td>
+						<input type="checkbox" name="interest" value="front-end">
+						<label>Front-end</label>
+						<br>
+						<input type="checkbox" name="interest" value="back-end">
+						<label>Back-end</label>
+						<br>
+						<input type="checkbox" name="interest" value="data-visualization">
+						<label>Data Visualization</label>
+						<br>
+					</td>
+				</tr>
+			</table>
+			<input type="submit">
+		</table>
+	</form>
+	<br>
+	<a href="index.html">Back to Home</a>
+</body>
+
+</html>
